@@ -1,0 +1,103 @@
+2022-12-17 03:24:14.970  WARN 61262 --- [Thread-7] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:24:14.972  WARN 61262 --- [Thread-7] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:24:14.976  INFO 61262 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 03:24:14.977  INFO 61262 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-17 03:24:14.982  INFO 61262 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-17 03:24:15.085  INFO 61262 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 61262 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 03:24:15.086  INFO 61262 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 03:24:15.385  INFO 61262 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 03:24:15.398  INFO 61262 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2022-12-17 03:24:15.534  INFO 61262 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-17 03:24:15.535  INFO 61262 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-17 03:24:15.535  INFO 61262 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-17 03:24:15.550  INFO 61262 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-17 03:24:15.550  INFO 61262 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2022-12-17 03:24:15.575  WARN 61262 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [A27115420ABCBC30E7167E9E8463A567]
+2022-12-17 03:24:15.581 ERROR 61262 --- [restartedMain] o.a.catalina.session.StandardManager     : Exception loading sessions from persistent storage
+
+java.io.StreamCorruptedException: invalid type code: 00
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1721) ~[na:na]
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2475) ~[na:na]
+	at java.base/java.io.ObjectInputStream.defaultReadObject(ObjectInputStream.java:635) ~[na:na]
+	at java.base/java.lang.Throwable.readObject(Throwable.java:896) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1175) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2336) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2207) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1690) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:499) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:457) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1564) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:1050) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:219) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:356) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5248) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:479) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.nijjwal.StudentappApplication.main(StudentappApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+
+2022-12-17 03:24:15.612  INFO 61262 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-12-17 03:24:15.617  INFO 61262 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-12-17 03:24:15.619  INFO 61262 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-17 03:24:15.627  INFO 61262 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect

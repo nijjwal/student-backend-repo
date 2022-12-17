@@ -1,0 +1,28 @@
+2022-12-17 02:36:25.338  INFO 60817 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-17 02:36:25.340  INFO 60817 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-17 02:36:25.342  INFO 60817 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-17 02:37:56.683  INFO 60817 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-17 02:37:56.687  INFO 60817 --- [Thread-37] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-17 02:37:56.688  INFO 60817 --- [Thread-37] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-17 02:37:56.691  WARN 60817 --- [Thread-37] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 02:37:56.691  WARN 60817 --- [Thread-37] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 02:37:56.696  INFO 60817 --- [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 02:37:56.696  INFO 60817 --- [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...

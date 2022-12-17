@@ -1,0 +1,77 @@
+2022-12-17 02:38:38.422  INFO 60817 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 02:38:38.510  INFO 60817 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4699aa4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d088c01, org.springframework.security.web.context.SecurityContextPersistenceFilter@20a82a3d, org.springframework.security.web.header.HeaderWriterFilter@45e2b6df, org.springframework.security.web.csrf.CsrfFilter@179275d3, org.springframework.security.web.authentication.logout.LogoutFilter@69b7343, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b45d30d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ae98bc8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b7e4436, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59a290af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@926910a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e1627ef, org.springframework.security.web.session.SessionManagementFilter@2490ff91, org.springframework.security.web.access.ExceptionTranslationFilter@111d1dca, org.springframework.security.web.access.intercept.AuthorizationFilter@5d596739]
+2022-12-17 02:38:38.532  WARN 60817 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-17 02:38:38.579  WARN 60817 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'studentController' method 
+com.nijjwal.controller.StudentController#getAllStudents(Model)
+to { [/]}: There is already 'studentController' bean method
+com.nijjwal.controller.StudentController#getAdminPage(Model) mapped.
+2022-12-17 02:38:38.579  INFO 60817 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 02:38:38.580  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2022-12-17 02:38:38.583  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2022-12-17 02:38:38.584  INFO 60817 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-17 02:38:38.589  INFO 60817 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-17 02:38:38.595 ERROR 60817 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'studentController' method 
+com.nijjwal.controller.StudentController#getAllStudents(Model)
+to { [/]}: There is already 'studentController' bean method
+com.nijjwal.controller.StudentController#getAdminPage(Model) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.nijjwal.StudentappApplication.main(StudentappApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'studentController' method 
+com.nijjwal.controller.StudentController#getAllStudents(Model)
+to { [/]}: There is already 'studentController' bean method
+com.nijjwal.controller.StudentController#getAdminPage(Model) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+
+2022-12-17 02:38:44.070  INFO 60817 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 60817 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 02:38:44.070  INFO 60817 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 02:38:44.190  INFO 60817 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 02:38:44.205  INFO 60817 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2022-12-17 02:38:44.325  INFO 60817 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-17 02:38:44.326  INFO 60817 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-17 02:38:44.326  INFO 60817 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-17 02:38:44.333  INFO 60817 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-17 02:38:44.333  INFO 60817 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 262 ms
+2022-12-17 02:38:44.363  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2022-12-17 02:38:44.366  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2022-12-17 02:38:44.368  INFO 60817 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-17 02:38:44.372  INFO 60817 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-17 02:38:44.388  INFO 60817 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-17 02:38:44.388  INFO 60817 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'

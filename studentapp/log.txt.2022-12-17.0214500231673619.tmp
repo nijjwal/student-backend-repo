@@ -1,0 +1,20 @@
+2022-12-17 03:18:35.871  WARN 61222 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:18:35.882  INFO 61222 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 03:18:35.883  INFO 61222 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-12-17 03:18:35.888  INFO 61222 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-12-17 03:18:58.318  INFO 61246 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 61246 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 03:18:58.319  INFO 61246 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 03:18:58.372  INFO 61246 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-17 03:18:58.372  INFO 61246 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-17 03:18:59.082  INFO 61246 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 03:18:59.128  INFO 61246 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-12-17 03:18:59.840  INFO 61246 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)

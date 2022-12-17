@@ -1,0 +1,27 @@
+2022-12-17 02:03:55.041  INFO 60595 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-17 02:03:55.073  INFO 60595 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-17 02:03:55.082  INFO 60595 --- [restartedMain] com.nijjwal.StudentappApplication        : Started StudentappApplication in 3.376 seconds (JVM running for 4.078)
+2022-12-17 02:03:58.674  INFO 60595 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-17 02:03:58.675  INFO 60595 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-17 02:03:58.676  INFO 60595 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-17 02:09:00.173  INFO 60595 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-17 02:09:00.187  INFO 60595 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-17 02:09:00.190  INFO 60595 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-17 02:09:00.208  INFO 60595 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 02:09:00.211  INFO 60595 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-17 02:09:00.219  INFO 60595 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-17 02:09:00.423  INFO 60595 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 60595 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 02:09:00.424  INFO 60595 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 02:09:00.655  INFO 60595 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 02:09:00.661  INFO 60595 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-12-17 02:09:00.754  INFO 60595 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-17 02:09:00.754  INFO 60595 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-17 02:09:00.754  INFO 60595 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-17 02:09:00.766  INFO 60595 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-17 02:09:00.766  INFO 60595 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 340 ms
+2022-12-17 02:09:00.799  INFO 60595 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-17 02:09:00.804  INFO 60595 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-17 02:09:00.807  INFO 60595 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-17 02:09:00.812  INFO 60595 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-17 02:09:00.833  INFO 60595 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-17 02:09:00.834  INFO 60595 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'

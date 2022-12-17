@@ -1,0 +1,39 @@
+2022-12-17 02:09:00.973  INFO 60595 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@225bb9c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cd51004, org.springframework.security.web.context.SecurityContextPersistenceFilter@ae48929, org.springframework.security.web.header.HeaderWriterFilter@3be836e2, org.springframework.security.web.csrf.CsrfFilter@4fd22dc5, org.springframework.security.web.authentication.logout.LogoutFilter@575ecca3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60ef2e2d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@71699980, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@25d2cff5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@125a6884, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e7cc81b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14d9ac10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@648d8d83, org.springframework.security.web.session.SessionManagementFilter@54062a69, org.springframework.security.web.access.ExceptionTranslationFilter@311abcc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7614ab08]
+2022-12-17 02:09:00.994  WARN 60595 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-17 02:09:01.099  INFO 60595 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-17 02:09:01.114  INFO 60595 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-17 02:09:01.119  INFO 60595 --- [restartedMain] com.nijjwal.StudentappApplication        : Started StudentappApplication in 0.766 seconds (JVM running for 310.118)
+2022-12-17 02:09:01.134  INFO 60595 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+

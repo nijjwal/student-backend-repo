@@ -1,0 +1,81 @@
+2022-12-17 02:38:38.028  INFO 60817 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-17 02:38:38.035  INFO 60817 --- [Thread-41] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-17 02:38:38.037  INFO 60817 --- [Thread-41] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-17 02:38:38.041  WARN 60817 --- [Thread-41] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Cannot serialize session attribute [SPRING_SECURITY_CONTEXT] for session [B9F9EE053D9973A7C5CF4EF967796943]
+
+java.io.NotSerializableException: com.nijjwal.model.Student
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1761) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1067) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:317) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:268) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:384) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5474) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:982) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:496) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:52) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:234) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:373) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:206) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1067) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:309) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:251) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:629) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+
+2022-12-17 02:38:38.048  INFO 60817 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 02:38:38.049  INFO 60817 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2022-12-17 02:38:38.052  INFO 60817 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2022-12-17 02:38:38.148  INFO 60817 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 60817 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 02:38:38.148  INFO 60817 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 02:38:38.277  INFO 60817 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 02:38:38.281  INFO 60817 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-12-17 02:38:38.354  INFO 60817 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-17 02:38:38.354  INFO 60817 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-17 02:38:38.354  INFO 60817 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-17 02:38:38.361  INFO 60817 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-17 02:38:38.361  INFO 60817 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2022-12-17 02:38:38.371  WARN 60817 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [B9F9EE053D9973A7C5CF4EF967796943]
+2022-12-17 02:38:38.393  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2022-12-17 02:38:38.397  INFO 60817 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2022-12-17 02:38:38.399  INFO 60817 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-17 02:38:38.404  INFO 60817 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-17 02:38:38.422  INFO 60817 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

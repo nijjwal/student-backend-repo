@@ -1,0 +1,42 @@
+2022-12-17 03:10:20.735  WARN 61135 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:10:20.736  WARN 61135 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:10:20.737  WARN 61135 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.13/java.io.UnixFileSystem.delete0(Native Method)
+ java.base@11.0.13/java.io.UnixFileSystem.delete(UnixFileSystem.java:271)
+ java.base@11.0.13/java.io.File.delete(File.java:1064)
+ app//ch.qos.logback.core.rolling.helper.Compressor.gzCompress(Compressor.java:206)
+ app//ch.qos.logback.core.rolling.helper.Compressor.compress(Compressor.java:58)
+ app//ch.qos.logback.core.rolling.helper.Compressor$CompressionRunnable.run(Compressor.java:282)
+ java.base@11.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+ java.base@11.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@11.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+2022-12-17 03:10:20.742  INFO 61135 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-17 03:10:20.743  INFO 61135 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-12-17 03:10:20.747  INFO 61135 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-12-17 03:10:41.081  INFO 61176 --- [restartedMain] com.nijjwal.StudentappApplication        : Starting StudentappApplication using Java 11.0.13 on Nijjwals-MBP with PID 61176 (/Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp/target/classes started by nijjwalshrestha in /Users/nijjwalshrestha/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/studentapp)
+2022-12-17 03:10:41.083  INFO 61176 --- [restartedMain] com.nijjwal.StudentappApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-17 03:10:41.128  INFO 61176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-17 03:10:41.129  INFO 61176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-17 03:10:41.727  INFO 61176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-17 03:10:41.765  INFO 61176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
